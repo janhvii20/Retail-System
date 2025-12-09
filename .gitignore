@@ -1,4 +1,5 @@
-.gitignore mein add karo:
-- *.csv
+
 - node_modules/
 - .env
+/backend/truestate_assignment_dataset.csv
+*.csv
