@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import transactionRoutes from './routes/transactions.js';
 
+import cors from "cors";
 dotenv.config();
 
 const app = express();
@@ -30,3 +31,8 @@ app.get('/api/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.use(cors({
+    origin: "https://retail-system-gamma.vercel.app",
+    methods: ["GET", "POST"],
+}));
