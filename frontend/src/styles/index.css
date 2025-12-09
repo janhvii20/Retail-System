@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .stat-card {
+    @apply flex flex-col gap-2;
+  }
+
+  .stat-label {
+    @apply text-xs text-gray-500 flex items-center gap-1;
+  }
+
+  .stat-value {
+    @apply text-xl font-bold text-gray-800;
+  }
+
+  .stat-icon {
+    @apply w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center text-xs text-gray-500 cursor-help;
+  }
+
+  .phone-link {
+    @apply flex items-center gap-1 text-primary cursor-pointer;
+  }
+
+  .phone-icon {
+    @apply w-3.5 h-3.5 border border-primary rounded text-xs flex items-center justify-center;
+  }
+}

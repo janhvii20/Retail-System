@@ -1,0 +1,10 @@
+{
+  "name": "retail-sales-system",
+  "version": "1.0.0",
+  "description": "Retail Sales Management System",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
